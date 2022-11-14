@@ -16,10 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-import account_pb2_grpc
 import project_pb2_grpc
-from account.product_service import ProductService
-from account.service import UserService
 from project.grpc_service.author_service import AuthorService
 from project.grpc_service.book_service import BookService
 
@@ -29,7 +26,5 @@ urlpatterns = [
 
 
 def grpc_handlers(server):
-    # account_pb2_grpc.add_UserControllerServicer_to_server(UserService.as_servicer(), server)
-    # # account_pb2_grpc.add_ProductControllerServicer_to_server(ProductService.as_servicer(), server)
     project_pb2_grpc.add_AuthorModelControllerServicer_to_server(AuthorService.as_servicer(), server)
     project_pb2_grpc.add_BookControllerServicer_to_server(BookService.as_servicer(), server)
