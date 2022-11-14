@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package project;
+
+import "google/protobuf/empty.proto";
+
+service AuthorModelController {
+  rpc List(AuthorModelListRequest) returns (stream AuthorModel) {}
+  rpc Create(AuthorModel) returns (AuthorModel) {}
+  rpc Retrieve(AuthorModelRetrieveRequest) returns (AuthorModel) {}
+  rpc Update(AuthorModel) returns (AuthorModel) {}
+  rpc Destroy(AuthorModel) returns (google.protobuf.Empty) {}
+}
+
+message AuthorModel {
+  int32 id = 1;
+  string name = 2;
+  string email = 3;
+  string address = 4;
+}
+
+message AuthorModelListRequest {
+}
+
+message AuthorModelRetrieveRequest {
+  int32 id = 1;
+}
+
+service BookController{
+  rpc List(BookRequest) returns (stream BookResponse) {}
+  rpc Create(BookResponse) returns (BookResponse) {}
+  rpc Retrieve(BookRequest) returns (BookResponse) {}
+  rpc Update(BookResponse) returns (BookResponse) {}
+  rpc Destroy(BookResponse) returns (google.protobuf.Empty) {}
+}
+
+
+message BookResponse {
+  int32 id = 1;
+  string name = 2;
+  int32 author_id = 3;
+  string type = 4;
+}
+
+message BookRequest{
+
+}
