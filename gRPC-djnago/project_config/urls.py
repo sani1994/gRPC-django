@@ -26,5 +26,8 @@ urlpatterns = [
 
 
 def grpc_handlers(server):
+    """
+    connection between gRPC model service method and proto service
+    """
     project_pb2_grpc.add_AuthorModelControllerServicer_to_server(AuthorService.as_servicer(), server)
     project_pb2_grpc.add_BookControllerServicer_to_server(BookService.as_servicer(), server)

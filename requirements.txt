@@ -1,5 +1,0 @@
-djangogrpcframework
-django==3.0.0
-djangorestframework==3.10.0
-grpcio
-grpcio-tools
