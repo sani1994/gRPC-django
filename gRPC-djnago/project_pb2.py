@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rproject.proto\x12\x07project\x1a\x1bgoogle/protobuf/empty.proto\"G\n\x0b\x41uthorModel\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\r\n\x05\x65mail\x18\x03 \x01(\t\x12\x0f\n\x07\x61\x64\x64ress\x18\x04 \x01(\t\"\x18\n\x16\x41uthorModelListRequest\"(\n\x1a\x41uthorModelRetrieveRequest\x12\n\n\x02id\x18\x01 \x01(\x05\"I\n\x0c\x42ookResponse\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x11\n\tauthor_id\x18\x03 \x01(\x05\x12\x0c\n\x04type\x18\x04 \x01(\t\"\r\n\x0b\x42ookRequest2\xce\x02\n\x15\x41uthorModelController\x12\x41\n\x04List\x12\x1f.project.AuthorModelListRequest\x1a\x14.project.AuthorModel\"\x00\x30\x01\x12\x36\n\x06\x43reate\x12\x14.project.AuthorModel\x1a\x14.project.AuthorModel\"\x00\x12G\n\x08Retrieve\x12#.project.AuthorModelRetrieveRequest\x1a\x14.project.AuthorModel\"\x00\x12\x36\n\x06Update\x12\x14.project.AuthorModel\x1a\x14.project.AuthorModel\"\x00\x12\x39\n\x07\x44\x65stroy\x12\x14.project.AuthorModel\x1a\x16.google.protobuf.Empty\"\x00\x32\xb4\x02\n\x0e\x42ookController\x12\x37\n\x04List\x12\x14.project.BookRequest\x1a\x15.project.BookResponse\"\x00\x30\x01\x12\x38\n\x06\x43reate\x12\x15.project.BookResponse\x1a\x15.project.BookResponse\"\x00\x12\x39\n\x08Retrieve\x12\x14.project.BookRequest\x1a\x15.project.BookResponse\"\x00\x12\x38\n\x06Update\x12\x15.project.BookResponse\x1a\x15.project.BookResponse\"\x00\x12:\n\x07\x44\x65stroy\x12\x15.project.BookResponse\x1a\x16.google.protobuf.Empty\"\x00\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rproject.proto\x12\x07project\x1a\x1bgoogle/protobuf/empty.proto\"G\n\x0b\x41uthorModel\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\r\n\x05\x65mail\x18\x03 \x01(\t\x12\x0f\n\x07\x61\x64\x64ress\x18\x04 \x01(\t\"\x18\n\x16\x41uthorModelListRequest\"(\n\x1a\x41uthorModelRetrieveRequest\x12\n\n\x02id\x18\x01 \x01(\x05\"F\n\x0c\x42ookResponse\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0e\n\x06\x61uthor\x18\x03 \x03(\x05\x12\x0c\n\x04type\x18\x04 \x01(\t\"\r\n\x0b\x42ookRequest2\xce\x02\n\x15\x41uthorModelController\x12\x41\n\x04List\x12\x1f.project.AuthorModelListRequest\x1a\x14.project.AuthorModel\"\x00\x30\x01\x12\x36\n\x06\x43reate\x12\x14.project.AuthorModel\x1a\x14.project.AuthorModel\"\x00\x12G\n\x08Retrieve\x12#.project.AuthorModelRetrieveRequest\x1a\x14.project.AuthorModel\"\x00\x12\x36\n\x06Update\x12\x14.project.AuthorModel\x1a\x14.project.AuthorModel\"\x00\x12\x39\n\x07\x44\x65stroy\x12\x14.project.AuthorModel\x1a\x16.google.protobuf.Empty\"\x00\x32\xb4\x02\n\x0e\x42ookController\x12\x37\n\x04List\x12\x14.project.BookRequest\x1a\x15.project.BookResponse\"\x00\x30\x01\x12\x38\n\x06\x43reate\x12\x15.project.BookResponse\x1a\x15.project.BookResponse\"\x00\x12\x39\n\x08Retrieve\x12\x14.project.BookRequest\x1a\x15.project.BookResponse\"\x00\x12\x38\n\x06Update\x12\x15.project.BookResponse\x1a\x15.project.BookResponse\"\x00\x12:\n\x07\x44\x65stroy\x12\x15.project.BookResponse\x1a\x16.google.protobuf.Empty\"\x00\x62\x06proto3')
 
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'project_pb2', globals())
@@ -28,11 +28,11 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _AUTHORMODELRETRIEVEREQUEST._serialized_start=154
   _AUTHORMODELRETRIEVEREQUEST._serialized_end=194
   _BOOKRESPONSE._serialized_start=196
-  _BOOKRESPONSE._serialized_end=269
-  _BOOKREQUEST._serialized_start=271
-  _BOOKREQUEST._serialized_end=284
-  _AUTHORMODELCONTROLLER._serialized_start=287
-  _AUTHORMODELCONTROLLER._serialized_end=621
-  _BOOKCONTROLLER._serialized_start=624
-  _BOOKCONTROLLER._serialized_end=932
+  _BOOKRESPONSE._serialized_end=266
+  _BOOKREQUEST._serialized_start=268
+  _BOOKREQUEST._serialized_end=281
+  _AUTHORMODELCONTROLLER._serialized_start=284
+  _AUTHORMODELCONTROLLER._serialized_end=618
+  _BOOKCONTROLLER._serialized_start=621
+  _BOOKCONTROLLER._serialized_end=929
 # @@protoc_insertion_point(module_scope)

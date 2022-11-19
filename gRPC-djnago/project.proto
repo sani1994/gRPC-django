@@ -38,7 +38,7 @@ service BookController{
 message BookResponse {
   int32 id = 1;
   string name = 2;
-  int32 author_id = 3;
+  repeated int32 author = 3;
   string type = 4;
 }
 
