@@ -17,3 +17,6 @@ class BookModel(BaseModel):
         verbose_name = 'Book'
         verbose_name_plural = "Book's"
 
+    def __str__(self):
+        return self.name
+

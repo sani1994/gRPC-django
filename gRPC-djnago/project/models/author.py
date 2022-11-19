@@ -16,3 +16,6 @@ class AuthorModel(BaseModel):
         verbose_name = 'Author'
         verbose_name_plural = "Author's"
 
+    def __str__(self):
+        return self.name
+
