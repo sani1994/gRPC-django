@@ -161,4 +161,4 @@ cython_debug/
 *.db
 db.*
 .idea/
-migrations/*
+migrations/
